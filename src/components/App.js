@@ -15,8 +15,8 @@ const App = () => (
   <BrowserRouter>
   <div className="container">
   <Header />
-  <Route exac path="/" component={Home} />
-  <Route path="/about" component={About} />
+  <Route exact path="/" component={Home} />
+  <Route path="/about" render={() => <About title="'bout" />} />
   <Route path="/teachers" component={Teachers} />
   <Route path="/courses" component={Courses} />
   </div>
